@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css" />
+
+
+<body>
+
+    <h1 class="title">Pomodoro Clock</h1>
+
+    <div class="header">
+        <div class="login" onmouseover="this.style.background='gray';" onmouseout="this.style.background='black';"></div>
+        <div class="user" onmouseover="this.style.background='gray';" onmouseout="this.style.background='black';"></div>
+    </div>
+
+    <div id="headings">
+        <div>SHORT BREAK</div>
+        <div>POMODORO</div>
+    </div>
+
+    <div id="configure">
+        <div>
+            <span id="break-minus" class="button">-</span>
+            <span id="break-val"></span>
+            <span id="break-plus" class="button">+</span>
+        </div>
+        <div>
+            <span id="pomodoro-minus" class="button">-</span>
+            <span id="pomodoro-val"></span>
+            <span id="pomodoro-plus" class="button">+</span>
+        </div>
+    </div>
+
+
+    <div id="circle">
+        <h2 id="timer-text">Session</h2>
+        <h2 id="timer-count"></h2>
+    </div>
+
+    <div id="video-div">
+        <!-- <video width="150" height="80" autoplay muted loop id="myVideo"><source src="./video/ripples.mp4" type="video/mp4"></video> -->
+            <video width="150" height="80" autoplay muted loop id="myVideo"><source src="./video/slowwaves.mp4" type="video/mp4"></video>
+     </div>
+
+    <div id="footer">
+
+    </div>
+    
+</body>
+
+<div id="opacity-container"></div>
+
+
+<script src="app.js"></script> 
+
+
+</html>
